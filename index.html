@@ -15,23 +15,10 @@
         <h1>Weather Pro</h1>
         
         <div class="search-box">
-            <input type="text" id="city-input" list="ciudades-sugeridas" placeholder="Ej: Málaga, Madrid, Londres...">
+            <input type="text" id="city-input" list="ciudades-sugeridas" placeholder="Ej: Málaga, La Línea, Londres..." autocomplete="off">
             <button id="search-btn">Buscar</button>
             
-            <datalist id="ciudades-sugeridas">
-                <option value="Málaga"></option>
-                <option value="Madrid"></option>
-                <option value="Barcelona"></option>
-                <option value="Sevilla"></option>
-                <option value="Valencia"></option>
-                <option value="La Línea de la Concepción"></option>
-                <option value="Algeciras"></option>
-                <option value="Gibraltar"></option>
-                <option value="Londres"></option>
-                <option value="Paris"></option>
-                <option value="Tokyo"></option>
-                <option value="Nueva York"></option>
-            </datalist>
+            <datalist id="ciudades-sugeridas"></datalist>
         </div>
 
         <div class="weather-card">
