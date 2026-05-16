@@ -15,15 +15,33 @@
         <h1>Weather Pro</h1>
         
         <div class="search-box">
-            <input type="text" id="city-input" list="ciudades-sugeridas" placeholder="Ej: Málaga, La Línea, Londres..." autocomplete="off">
+            <input type="text" id="city-input" list="ciudades-sugeridas" placeholder="Ej: La Línea, Algeciras, Málaga..." autocomplete="off">
             <button id="search-btn">Buscar</button>
             
-            <datalist id="ciudades-sugeridas"></datalist>
+            <datalist id="ciudades-sugeridas">
+                <option value="La Línea de la Concepción"></option>
+                <option value="Algeciras"></option>
+                <option value="San Roque"></option>
+                <option value="Los Barrios"></option>
+                <option value="Tarifa"></option>
+                <option value="Gibraltar"></option>
+                <option value="Málaga"></option>
+                <option value="Sevilla"></option>
+                <option value="Madrid"></option>
+                <option value="Barcelona"></option>
+                <option value="Londres"></option>
+                <option value="Nueva York"></option>
+            </datalist>
         </div>
 
         <div class="weather-card">
             <div id="message">
                 <p>Busca una ciudad para ver el clima en tiempo real</p>
+            </div>
+
+            <div id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Consultando satélites...</p>
             </div>
             
             <div id="weather-data" style="display: none;">
@@ -31,9 +49,11 @@
                 <img id="weather-icon" src="" alt="Icono clima">
                 <h1 id="temp"></h1>
                 <p id="description"></p>
+                
                 <div class="details">
-                    <p>Humedad: <span id="humidity"></span></p>
-                    <p>Viento: <span id="wind"></span></p>
+                    <p>Sensación: <span id="feels-like">--</span></p>
+                    <p>Humedad: <span id="humidity">--</span></p>
+                    <p>Viento: <span id="wind">--</span></p>
                 </div>
             </div>
         </div>
