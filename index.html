@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Pro | Jesús Vilches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="https://vilcheslinense4.github.io/Mi-primer-portafolios/" class="btn-volver">← Volver al Portafolio</a>
+        </nav>
+
+        <h1>Weather Pro</h1>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" list="ciudades-sugeridas" placeholder="Ej: Málaga, Madrid, Londres...">
+            <button id="search-btn">Buscar</button>
+            
+            <datalist id="ciudades-sugeridas">
+                <option value="Málaga"></option>
+                <option value="Madrid"></option>
+                <option value="Barcelona"></option>
+                <option value="Sevilla"></option>
+                <option value="Valencia"></option>
+                <option value="La Línea de la Concepción"></option>
+                <option value="Algeciras"></option>
+                <option value="Gibraltar"></option>
+                <option value="Londres"></option>
+                <option value="Paris"></option>
+                <option value="Tokyo"></option>
+                <option value="Nueva York"></option>
+            </datalist>
+        </div>
+
+        <div id="weather-result" class="weather-card">
+            <p id="message">Busca una ciudad para ver el clima en tiempo real</p>
+            
+            <div id="weather-data" style="display: none;">
+                <h2 id="city-name"></h2>
+                <img id="weather-icon" src="" alt="Icono clima">
+                <h1 id="temp"></h1>
+                <p id="description"></p>
+                <div class="details">
+                    <p>Humedad: <span id="humidity"></span></p>
+                    <p>Viento: <span id="wind"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
